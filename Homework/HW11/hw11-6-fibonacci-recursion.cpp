@@ -22,10 +22,12 @@ int main() {
     int n, i;
     long long sum = 0;
 
-    printf("กรุณากรอกจำนวนตัวเลข: ");
+    printf("Test case:\n");
+    printf("        ");
     scanf("%d", &n);
 
-    printf("Series = ");
+    printf("Output:\n");
+    printf("        Series = ");
     for (i = 0; i < n; i++) {
         printf("%d", fibonacci(i));
         if (i < n - 1) {
@@ -34,7 +36,7 @@ int main() {
         sum += fibonacci(i);
     }
 
-    printf("\nSum = %lld\n", sum);
+    printf("\n        Sum = %lld\n", sum);
 
     return 0;
 }
